@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bdv</title>
+
+    <!-- javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+    <!-- bootsrap -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>  
+    <link rel="stylesheet" href="normailize.css"/>
+    <link rel="stylesheet" href="formstyle.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+        <main>
+                <div class="container">
+                  <div class="container-2">
+                    <div class="row-job">
+                      <span class="nav" ><a href="" id="">Home></a><span> IT Engineer</span></span>
+                      <div class="head">
+                        <div>
+                            <h2>IT Engineer</h2>
+                            <h3 style="padding-top: 12px">Bandung</h3>
+                        </div> 
+                          <a class="navbar-brand img-responsive logo" href="#home"><img src="Images\Bdv.PNG" alt="Logo" width="140" height="134"></a>            
+                      </div>
+                  </div>
+                  </div>
+                  <form class="form" id="bdv-form" onSubmit="return check_phone(this)">
+                    <!-- bagian1 -->  
+                        <div class="legend">
+                            <legend class="personal">Personal Information</legend>
+                        </div>
+                        <label for="name" id="name-label">Name</label>
+                        <input type="text" id="name" required placeholder="Insert Name" value="">
+                        <label for="email" id="email-label">Email</label>
+                        <input type="email" id="email" required placeholder="username@mail.com" value="">                      
+                        <label for="phone" id="phone-label">Phone</label>
+                        <h6 style="color:#f5365c;font-size:14px" >*Example 08xxxxxxxxxx *</h6>
+                        <input type="text" id="phone" required placeholder="Enter Phone Number" value="" pattern="^\d{12}$|^\d{11}$" max="12" required>
+                        <!-- <script type="text/javascript">
+                              function check_phone(phone){
+                                var regex =/^(^\+62\s?|^0)(\d{3,4}-?){2}\d{3,4}$/;
+                                if(regex.test(phone.value)){
+                                  return true;
+
+                                  }
+                                else{
+                                    alert("Harap Masukan Nomor Telephone Yang Valid");
+                                    return false;
+                                }
+                                }
+                           
+                        </script> -->
+                        <label for="degree" id="degree-label" >Degree</label>
+                        <select required name="select" id="dropdown" >
+                                    <option value="" disabled selected hidden>Please chose...</option>
+                                    <option value="1" >High school diploma </option>
+                                    <option value="2" >Bachelor's degree</option>
+                                    <option value="3">Master's degree</option>
+                        </select>
+                        <label for="dropdown" id="dropdown-label">University</label>
+                        <select name="select" id="dropdown" required> 
+                                <option value="" disabled selected hidden>Please chose...</option>                             
+                                <option value="A">Telkom</option>
+                                <option value="B">ITB</option>
+                                <option value="C">UGM</option>
+                                <option value="D">MARANATHA</option>
+                        </select>   
+                    <!-- end bagian1 -->
+
+                    <!-- bagian2 -->
+                        <div class="legend">
+                                <legend class="personal">Internship</legend>
+                        </div>
+                        <label for="dropdown" id="dropdown-label">Position</label>
+                        <select name="select" id="dropdown" value="" required>
+                                <option value="" disabled selected hidden>Please chose...</option>
+                                <option value="A">IT Engineer</option>
+                                <option value="A">IT Support</option>
+                                <option value="A">Designer</option>
+                        </select>
+                        <label for="field" id="field-label">Field Study</label>
+                        <input type="text" id="field" required placeholder="Field Study" value="">
+                        <!-- <script>
+                              var field = document.getElementById("field");
+                              var fieldValue = field.value;
+                              submit.addEventListener("click", function() {
+                                if (fieldValue.length === 0) {
+                                  name.classList.add("invalid");
+                                  errorMessage.innerText = "Please Enter Field Study";
+                                  return errorMessage.innerText;
+                                } 
+                                else {
+                                  name.classList.add("valid");
+                                }
+                              });
+
+                        </script> -->
+                        <label for="date" id="date-label">Set Internship Date</label>
+                        <input type="text" name="datefilter" required value="" id="date" />
+                        <script type="text/javascript">
+                          $(function() {
+                          
+                            $('input[name="datefilter"]').daterangepicker({
+                                autoUpdateInput: false,
+                                locale: {
+                                    cancelLabel: 'Clear'
+                                }
+                            });
+                          
+                            $('input[name="datefilter"]').on('apply.daterangepicker', function(ev, picker) {
+                                $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
+                            });
+                          
+                            $('input[name="datefilter"]').on('cancel.daterangepicker', function(ev, picker) {
+                                $(this).val('');
+                            });
+                          
+                          });
+                          </script>
+                        
+                        <!-- end bagian2 -->
+                        <div class="legend"><legend class="personal">Portofolio</legend> </div>
+                          <label for="textarea" id="textarea-label">Cover Letter</label>
+                          <textarea style="font-size:16px" id="textarea" placeholder="Enter summary" value=""></textarea>
+                          <label for="resume" id="resume-label">Resume</label>
+                          <input  type="text" id="link" required placeholder="Paste Yor Link Here" value="">
+                          <label for="linkedin" id="linkedin-label">Linkedin</label>
+                          <input type="text" id="link" required placeholder="Paste Yor Link Here" value="">
+
+                          <div style="margin-top: 48px;">
+                              <p class="text-center" id="error-message"></p>
+                              </div>
+                              <div class="text-center button-wrapper">
+                              <button type="submit" class="button primary" id="submit" >Submit Your Application</button>
+                              </div>
+                    </div>
+
+                  </form>
+              </main>
+    
+</body>
+<script src="form.js"></script>
+</html>
