@@ -33,6 +33,18 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 
+
+$routes->group('admin', ['filter' => 'login'], function ($routes) {
+	$routes->add('/', 'Admin::index');
+	$routes->add('project', 'Admin::project');
+	$routes->add('project/add', 'Admin::tambahProject');
+	$routes->add('project/detail/(:num)', 'Admin::detailProject/$1');
+	$routes->post('insert', 'Admin::insertProject');
+	$routes->add('project/delete/(:num)', 'Admin::deleteProject/$1');
+	$routes->add('project/edit/(:num)', 'Admin::editProject/$1');
+	$routes->post('project/update/(:num)', 'Admin::updateProject/$1');
+});
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
