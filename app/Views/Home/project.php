@@ -74,6 +74,9 @@
             <div class="col-md-6">
                 <video class="img-fluid" controls>
                     <source src="/uploads/video/<?= $project['video'] ?>" type="video/mp4">
+                    <source src="/uploads/video/<?= $project['video'] ?>" type="video/mpg">
+                    <source src="/uploads/video/<?= $project['video'] ?>" type="video/mkv">
+                    <source src="/uploads/video/<?= $project['video'] ?>" type="video/ogg">
                     Your browser does not support the video tag.
                 </video>
             </div>
