@@ -2,15 +2,31 @@
 
 namespace App\Controllers;
 
+use App\Models\ProjectModel;
+
 class Home extends BaseController
 {
-	public function index()
+	protected $project;
+
+	public function __construct()
 	{
-		return view('Home/home');
+		$this->project = new ProjectModel();
 	}
 
-	public function home()
+	public function index()
 	{
-		echo "Halaman Home";
+		$data = [
+			'project' => $this->project->findAll()
+		];
+		return view('Home/home', $data);
+	}
+
+	public function project($id)
+	{
+		$data = [
+			'project' => $this->project->find($id)
+		];
+
+		return view('Home/project', $data);
 	}
 }
