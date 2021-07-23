@@ -187,7 +187,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2021</span>
+                        <span>Copyright &copy; Rajasasland 2021</span>
                     </div>
                 </div>
             </footer>
@@ -226,7 +226,7 @@
     <!-- Bootstrap core JavaScript-->
     <script src="/admin-assets/vendor/jquery/jquery.min.js"></script>
     <script src="/admin-assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.min.js"></script>
+    
 
     <!-- Core plugin JavaScript-->
     <script src="/admin-assets/vendor/jquery-easing/jquery.easing.min.js"></script>
@@ -243,6 +243,7 @@
     <script src="/admin-assets/js/demo/datatables-demo.js"></script>
     <script src="/admin-assets/js/demo/chart-area-demo.js"></script>
     <script src="/admin-assets/js/demo/chart-pie-demo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.min.js"></script>
 
     <script>
         $(document).ready(function() {

@@ -34,9 +34,9 @@
 <body>
     <!-- new navbar -->
     <section class=" h-100 w-100" style="box-sizing: border-box; background-color: #141432">
-        <div class="fixed-top header-4-3 container-xxl mx-auto p-0 position-fixed" style="font-family: 'Poppins', sans-serif; background-color: #141432">
+        <div class="fixed-top header-4-3 mx-auto p-0 position-fixed" style="font-family: 'Poppins', sans-serif; background-color: #141432">
             <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
-                <a href="#">
+                <a href="<?= base_url('')?>">
                     <img style="margin-right: 0.75rem" src="<?= base_url('') ?>/images/logo.svg" height="60" alt="" />
                 </a>
                 <button class="navbar-toggler border-0" type="button" data-bs-toggle="modal" data-bs-target="#targetModal-item">
@@ -46,19 +46,19 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo">
                     <ul class="navbar-nav mt-2 mt-lg-0">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#" style="color: #e7e7e8">Home</a>
+                            <a class="nav-link" href="<?= base_url('')?>" style="color: #e7e7e8">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#fasilitas">About</a>
+                            <a class="nav-link" href="#section2">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#harga">Project</a>
+                            <a class="nav-link" href="#project">Project</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#why" class="nav-link">Berita</a>
+                            <a href="#" class="nav-link">Berita</a>
                         </li>
                         <li>
-                            <a class="primary-button" href="#Form"><span>Contact Us</span></a>
+                            <a class="primary-button-login" href="<?= base_url('admin')?>"><span>Login</span></a>
                         </li>
                     </ul>
                 </div>

@@ -538,6 +538,28 @@ template {
   background-color: #ca7e1b;
 }
 
+/* login button  */
+.primary-button-login {
+  border: 1px solid #f69220;
+  padding: 13px 26px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 500;
+  font-size: 13px;
+  transition: all 350ms ease-out;
+}
+.primary-button-login:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #e08c1e;
+  opacity: 1;
+}
+.primary-button-login:active {
+  background-color: #ca7e1b;
+}
+
+/* end login button  */
+
 /* .active {
     background: #F9F9FC;
     -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);

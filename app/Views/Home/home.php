@@ -93,7 +93,7 @@
 <!-- end section 3  -->
 
 <!-- section4 -->
-<div class="section-4">
+<div class="section-4" id="project">
     <div class="container">
         <h1>Our Projects</h1>
     </div>
