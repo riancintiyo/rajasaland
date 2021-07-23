@@ -1,4 +1,4 @@
-<?= $this->extend('Layout/home') ?>
+<?= $this->extend('Layout/project') ?>
 
 <?= $this->section('content') ?>
 
@@ -52,7 +52,7 @@
     </div>
 </section>
 
-<section class="project-2">
+<section class="project-2" id="gallery">
     <div class="container">
         <div class="row">
             <div class="col-md-4 gallery">
@@ -68,7 +68,7 @@
     </div>
 </section>
 
-<section class="project-3">
+<section class="project-3" id="video">
     <div class="container">
         <div class="row">
             <div class="col-md-6">

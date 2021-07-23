@@ -49,13 +49,10 @@
                             <a class="nav-link" href="<?= base_url('')?>" style="color: #e7e7e8">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#section2">About</a>
+                            <a class="nav-link" href="#video">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#project">Project</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Berita</a>
+                            <a href="#gallery" class="nav-link">Gallery</a>
                         </li>
                         <li class="mt-1">
                             <a class="primary-button-login" href="<?= base_url('admin')?>"><span>Login</span></a>

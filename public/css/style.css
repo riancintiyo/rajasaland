@@ -337,7 +337,7 @@ template {
 
 .header-4-3 .navbar-dark .navbar-nav .nav-link {
   font: 300 18px/1.5rem Poppins, sans-serif;
-  color: #707092;
+  color: #f2f2f8;
   transition: 0.3s;
 }
 
@@ -544,7 +544,7 @@ template {
   padding: 13px 26px;
   border-radius: 10px;
   color: white;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 13px;
   transition: all 350ms ease-out;
 }
@@ -910,7 +910,7 @@ a {
 }
 
 footer {
-  background-color: #141432;
+  background-color: #1D6A65;
   color: white;
   width: 100%;
   font-family: Open Sans;
