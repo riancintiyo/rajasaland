@@ -89,8 +89,6 @@
                 </div>
                 <!-- Grid column -->
 
-                <hr class="clearfix w-100 d-md-none pb-3">
-
                 <!-- Grid column -->
                 <div class="col-md-3 mb-md-0 mb-3">
 
@@ -143,7 +141,7 @@
     <!-- modal responsive menu -->
     <div class="modal-item modal fade" id="targetModal-item" tabindex="-1" role="dialog" aria-labelledby="targetModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document" sytle="position:absolute; z-index: 1000;">
-            <div class="modal-content border-0" style="background-color: #141432">
+            <div class="modal-content border-0" style="background-color: #1D6A65">
                 <div class="modal-header border-0" style="padding: 2rem; padding-bottom: 0">
                     <a class="modal-title" id="targetModalLabel">
                         <img style="margin-top: 0.5rem" src="<?= base_url('') ?>/images/logo.svg" height="60" alt="" />
@@ -153,19 +151,19 @@
                 <div class="modal-body" style="padding: 2rem; padding-top: 0; padding-bottom: 0">
                     <ul class="navbar-nav responsive me-auto mt-2 mt-lg-0">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#" style="color: #e7e7e8">Home</a>
+                            <a class="nav-link" href="<?= base_url('')?>" style="color: #e7e7e8">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#fasilitas">About</a>
+                            <a class="nav-link" href="#section2" style="color: #ffffff">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#harga">Project</a>
+                            <a class="nav-link" href="#project" style="color: #ffffff">Project</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#why" class="nav-link">Berita</a>
+                            <a href="#" class="nav-link" style="color: #ffffff">Berita</a>
                         </li>
                         <li class="mt-3">
-                            <a class="primary-button" href="#Form"><span>Contact Us</span></a>
+                            <a class="primary-button-login" href="<?= base_url('admin')?>"><span>Login</span></a>
                         </li>
                     </ul>
                 </div>
@@ -190,7 +188,6 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
-<script src="js/script.js"></script>
 
 <script type="text/javascript">
     $(document).ready(function() {
