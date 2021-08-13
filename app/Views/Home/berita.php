@@ -1,4 +1,4 @@
-<?= $this->extend('Layout/home') ?>
+<?= $this->extend('Layout/berita') ?>
 
 <?= $this->section('content') ?>
 <div id="content" class="site-content">
