@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="<?= base_url() ?>/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="<?= base_url() ?>/css/normailize.css" />
-    <link rel="stylesheet" href="<?= base_url() ?>/css/style.css">
+    <link rel="stylesheet" href="<?= base_url() ?>/css/artikel.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
 
 </head>
@@ -179,6 +179,19 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
 
+    <!-- jQuery -->
+    <script src="<?= base_url('')?>assets/js/jquery.min.js"></script>
+    <script src="<?= base_url('')?>assets/js/slick.min.js"></script>
+    <script src="<?= base_url('')?>assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="<?= base_url('')?>assets/js/jquery.isotope.min.js"></script>
+    <script src="<?= base_url('')?>assets/js/easypiechart.js"></script>
+    <script src="<?= base_url('')?>assets/js/particles.min.js"></script>
+    <script src="<?= base_url('')?>assets/js/jquery.countdown.min.js"></script>
+    <script src="<?= base_url('')?>assets/js/scripts.js"></script>
+    <script src="<?= base_url('')?>assets/js/header-mobile.js"></script>
+    <script src="<?= base_url('')?>assets/js/royal_preloader.min.js"></script>
+    <script src="https://use.fontawesome.com/0a27f65898.js"></script>
+
 <script type="text/javascript">
     $(document).ready(function() {
         $('.slider').slick({
@@ -187,6 +200,14 @@
             autoplay: true,
             autoplaySpeed: 2000,
         });
+
+        Splitting();
+
+        ScrollOut({
+        threshold: 0.2,
+        once: true
+        });
+
     });
 </script>
 

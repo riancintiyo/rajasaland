@@ -29,7 +29,7 @@
                 <div class="col">
                     <div class='inner-container'>
                         <div class="background-container"></div>
-                        <div class="subheading-2" style="position: absolute; background-color:#1D6A65; color:#fff">
+                        <div class="subheading-2" style="background-color:#1D6A65; color:#fff">
                             <h1 style="font-weight:600">About Us</h1>
                             <h2>Rajasaland<br></h2>
                             <p style="line-height: 1.5; font-size: 16px;"> Rajasaland merupakan pengembang properti yang progresif dengan pengalaman

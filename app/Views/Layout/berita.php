@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="<?= base_url() ?>/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="<?= base_url() ?>/css/normailize.css" />
-    <link rel="stylesheet" href="<?= base_url() ?>/css/style.css">
+    <link rel="stylesheet" href="<?= base_url() ?>/css/berita.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
 
 </head>
