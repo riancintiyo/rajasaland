@@ -1,0 +1,133 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?e0bc2bbc49272275fb591a393c8a537f") format("truetype"),
+url("./flaticon.woff?e0bc2bbc49272275fb591a393c8a537f") format("woff"),
+url("./flaticon.woff2?e0bc2bbc49272275fb591a393c8a537f") format("woff2"),
+url("./flaticon.eot?e0bc2bbc49272275fb591a393c8a537f#iefix") format("embedded-opentype"),
+url("./flaticon.svg?e0bc2bbc49272275fb591a393c8a537f#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "search": "\f101",
+    "system": "\f102",
+    "startup": "\f103",
+    "pie-chart": "\f104",
+    "file": "\f105",
+    "right-arrow": "\f106",
+    "transparency": "\f107",
+    "settings": "\f108",
+    "www": "\f109",
+    "advertisement": "\f10a",
+    "megaphone": "\f10b",
+    "organize": "\f10c",
+    "blog": "\f10d",
+    "settings-1": "\f10e",
+    "global-network": "\f10f",
+    "bar-chart": "\f110",
+    "shopping-bag": "\f111",
+    "cart": "\f112",
+    "shopping-cart": "\f113",
+    "down-arrow": "\f114",
+    "upload": "\f115",
+    "placeholder-filled-point": "\f116",
+    "gmail": "\f117",
+    "contact-book": "\f118",
+    "contact": "\f119",
+    "left-arrow": "\f11a",
+    "right-arrow-angle": "\f11b",
+);
+
+.flaticon-search:before {
+    content: map-get($flaticon-map, "search");
+}
+.flaticon-system:before {
+    content: map-get($flaticon-map, "system");
+}
+.flaticon-startup:before {
+    content: map-get($flaticon-map, "startup");
+}
+.flaticon-pie-chart:before {
+    content: map-get($flaticon-map, "pie-chart");
+}
+.flaticon-file:before {
+    content: map-get($flaticon-map, "file");
+}
+.flaticon-right-arrow:before {
+    content: map-get($flaticon-map, "right-arrow");
+}
+.flaticon-transparency:before {
+    content: map-get($flaticon-map, "transparency");
+}
+.flaticon-settings:before {
+    content: map-get($flaticon-map, "settings");
+}
+.flaticon-www:before {
+    content: map-get($flaticon-map, "www");
+}
+.flaticon-advertisement:before {
+    content: map-get($flaticon-map, "advertisement");
+}
+.flaticon-megaphone:before {
+    content: map-get($flaticon-map, "megaphone");
+}
+.flaticon-organize:before {
+    content: map-get($flaticon-map, "organize");
+}
+.flaticon-blog:before {
+    content: map-get($flaticon-map, "blog");
+}
+.flaticon-settings-1:before {
+    content: map-get($flaticon-map, "settings-1");
+}
+.flaticon-global-network:before {
+    content: map-get($flaticon-map, "global-network");
+}
+.flaticon-bar-chart:before {
+    content: map-get($flaticon-map, "bar-chart");
+}
+.flaticon-shopping-bag:before {
+    content: map-get($flaticon-map, "shopping-bag");
+}
+.flaticon-cart:before {
+    content: map-get($flaticon-map, "cart");
+}
+.flaticon-shopping-cart:before {
+    content: map-get($flaticon-map, "shopping-cart");
+}
+.flaticon-down-arrow:before {
+    content: map-get($flaticon-map, "down-arrow");
+}
+.flaticon-upload:before {
+    content: map-get($flaticon-map, "upload");
+}
+.flaticon-placeholder-filled-point:before {
+    content: map-get($flaticon-map, "placeholder-filled-point");
+}
+.flaticon-gmail:before {
+    content: map-get($flaticon-map, "gmail");
+}
+.flaticon-contact-book:before {
+    content: map-get($flaticon-map, "contact-book");
+}
+.flaticon-contact:before {
+    content: map-get($flaticon-map, "contact");
+}
+.flaticon-left-arrow:before {
+    content: map-get($flaticon-map, "left-arrow");
+}
+.flaticon-right-arrow-angle:before {
+    content: map-get($flaticon-map, "right-arrow-angle");
+}

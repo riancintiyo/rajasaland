@@ -29,4 +29,11 @@ class Home extends BaseController
 
 		return view('Home/project', $data);
 	}
+	public function berita()
+	{
+		// $data = [
+		// 	'project' => $this->project->findAll()
+		// ];
+		return view('Home/berita');
+	}
 }

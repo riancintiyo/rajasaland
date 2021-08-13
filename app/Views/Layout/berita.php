@@ -179,6 +179,19 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
 
+    <!-- jQuery -->
+    <script src="<?= base_url('')?>assets/js/jquery.min.js"></script>
+    <script src="<?= base_url('')?>assets/js/slick.min.js"></script>
+    <script src="<?= base_url('')?>assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="<?= base_url('')?>assets/js/jquery.isotope.min.js"></script>
+    <script src="<?= base_url('')?>assets/js/easypiechart.js"></script>
+    <script src="<?= base_url('')?>assets/js/particles.min.js"></script>
+    <script src="<?= base_url('')?>assets/js/jquery.countdown.min.js"></script>
+    <script src="<?= base_url('')?>assets/js/scripts.js"></script>
+    <script src="<?= base_url('')?>assets/js/header-mobile.js"></script>
+    <script src="<?= base_url('')?>assets/js/royal_preloader.min.js"></script>
+    <script src="https://use.fontawesome.com/0a27f65898.js"></script>
+
 <script type="text/javascript">
     $(document).ready(function() {
         $('.slider').slick({

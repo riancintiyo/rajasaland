@@ -1,0 +1,101 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("./flaticon.ttf?e0bc2bbc49272275fb591a393c8a537f") format("truetype"),
+url("./flaticon.woff?e0bc2bbc49272275fb591a393c8a537f") format("woff"),
+url("./flaticon.woff2?e0bc2bbc49272275fb591a393c8a537f") format("woff2"),
+url("./flaticon.eot?e0bc2bbc49272275fb591a393c8a537f#iefix") format("embedded-opentype"),
+url("./flaticon.svg?e0bc2bbc49272275fb591a393c8a537f#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-search:before {
+    content: "\f101";
+}
+.flaticon-system:before {
+    content: "\f102";
+}
+.flaticon-startup:before {
+    content: "\f103";
+}
+.flaticon-pie-chart:before {
+    content: "\f104";
+}
+.flaticon-file:before {
+    content: "\f105";
+}
+.flaticon-right-arrow:before {
+    content: "\f106";
+}
+.flaticon-transparency:before {
+    content: "\f107";
+}
+.flaticon-settings:before {
+    content: "\f108";
+}
+.flaticon-www:before {
+    content: "\f109";
+}
+.flaticon-advertisement:before {
+    content: "\f10a";
+}
+.flaticon-megaphone:before {
+    content: "\f10b";
+}
+.flaticon-organize:before {
+    content: "\f10c";
+}
+.flaticon-blog:before {
+    content: "\f10d";
+}
+.flaticon-settings-1:before {
+    content: "\f10e";
+}
+.flaticon-global-network:before {
+    content: "\f10f";
+}
+.flaticon-bar-chart:before {
+    content: "\f110";
+}
+.flaticon-shopping-bag:before {
+    content: "\f111";
+}
+.flaticon-cart:before {
+    content: "\f112";
+}
+.flaticon-shopping-cart:before {
+    content: "\f113";
+}
+.flaticon-down-arrow:before {
+    content: "\f114";
+}
+.flaticon-upload:before {
+    content: "\f115";
+}
+.flaticon-placeholder-filled-point:before {
+    content: "\f116";
+}
+.flaticon-gmail:before {
+    content: "\f117";
+}
+.flaticon-contact-book:before {
+    content: "\f118";
+}
+.flaticon-contact:before {
+    content: "\f119";
+}
+.flaticon-left-arrow:before {
+    content: "\f11a";
+}
+.flaticon-right-arrow-angle:before {
+    content: "\f11b";
+}

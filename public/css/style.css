@@ -1396,7 +1396,7 @@ button.slick-prev:hover {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 851px) {
   /* For mobile phones: */
   .subheading-2 {
     max-width: fit-content;
