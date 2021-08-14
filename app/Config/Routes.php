@@ -33,6 +33,7 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->get('/project/(:num)', 'Home::project/$1');
+$routes->get('/berita', 'Berita::index');
 
 
 $routes->group('admin', ['filter' => 'login'], function ($routes) {

@@ -11,8 +11,6 @@ class Artikel extends BaseController
 	{
 		$data['title'] = 'Rajasaland';
 
-		$this->load->view('templates/header',$data);
-        $this->load->view('artikel');
-        $this->load->view('templates/footer');
+		return view('Artikel/artikel', $data);
 	}
 }

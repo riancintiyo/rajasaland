@@ -676,7 +676,7 @@ p {
   justify-content: space-between;
 }
 .subheading-2 {
-  position: absolute; 
+  position: absolute;
   min-width: 50%;
   max-width: 40vw;
   padding: 48px;
@@ -911,7 +911,7 @@ a {
 }
 
 footer {
-  background-color: #1D6A65;
+  background-color: #1d6a65;
   color: white;
   width: 100%;
   font-family: Open Sans;
@@ -936,16 +936,17 @@ h6 {
 
 /* Tambahan Ibnu */
 .card-project img {
-  filter: brightness(0.5);
+  filter: brightness(0.5) blur(1px);
   transition: 0.6s all ease-in-out;
 }
 
 .card-project {
   transition: 0.6s all ease-in-out;
+  z-index: 3;
 }
 
 .card-project:hover img {
-  filter: brightness(0.8);
+  filter: brightness(0.8) blur(0px);
   transition: 0.6s all ease-in-out;
 }
 
@@ -1402,10 +1403,9 @@ button.slick-prev:hover {
     max-width: fit-content;
     flex-direction: column;
   }
-  .background-container{
+  .background-container {
     background-image: none;
   }
-
 }
 .responsive-slider .img-slider {
   width: 100%;

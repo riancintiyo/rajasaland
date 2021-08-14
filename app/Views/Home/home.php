@@ -105,6 +105,7 @@
                     <div class="card-img-overlay text-center img-overlay">
                         <h3 class="card-title">Wangsarajasa</h3>
                     </div>
+                    <div class="gradient-overlay"></div>
                 </div>
             </a>
         <?php endforeach; ?>

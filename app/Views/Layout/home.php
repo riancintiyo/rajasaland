@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="<?= base_url() ?>/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="<?= base_url() ?>/css/normailize.css" />
     <link rel="stylesheet" href="<?= base_url() ?>/css/style.css">
+    <link rel="stylesheet" href="<?= base_url() ?>/css/berita.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
 
 </head>
@@ -36,7 +37,7 @@
     <section class=" h-100 w-100" style="box-sizing: border-box; background-color: #1D6A65">
         <div class="fixed-top header-4-3 mx-auto p-0 position-fixed" style="font-family: 'Poppins', sans-serif; background-color: #1D6A65">
             <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
-                <a href="<?= base_url('')?>">
+                <a href="<?= base_url('') ?>">
                     <img style="margin-right: 0.75rem" src="<?= base_url('') ?>/images/logo.svg" height="60" alt="" />
                 </a>
                 <button class="navbar-toggler border-0" type="button" data-bs-toggle="modal" data-bs-target="#targetModal-item">
@@ -46,19 +47,19 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo">
                     <ul class="navbar-nav mt-2 mt-lg-0">
                         <li class="nav-item active">
-                            <a class="nav-link" href="<?= base_url('')?>" style="color: #e7e7e8">Home</a>
+                            <a class="nav-link" href="<?= base_url('') ?>" style="color: #e7e7e8">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#section2">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#project">Project</a>
+                            <a class="nav-link" href="<?= base_url('#project') ?>">Project</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Berita</a>
+                            <a class="nav-link" href="<?= base_url('/berita') ?>">Berita</a>
                         </li>
                         <li class="mt-1">
-                            <a class="primary-button-login" href="<?= base_url('admin')?>"><span>Contact Us</span></a>
+                            <a class="primary-button-login" href="<?= base_url('admin') ?>"><span>Contact Us</span></a>
                         </li>
                     </ul>
                 </div>
@@ -75,15 +76,15 @@
         <div class="container text-center text-md-left">
 
             <!-- Grid row -->
-            <div class="row footer">
+            <div class="row footer justify-content-center">
 
                 <!-- Grid column -->
-                <div class="col-md-3 mt-md-0 mt-3">
+                <div class="col-md-4 mt-md-0 mt-3">
 
                     <!-- Content -->
                     <h5 class="text-h">Rajasaland</h5>
                     <h6>Description</h6>
-                    <p class="tp">Rajasaland merupakan pengembang properti yang progresif dengan 
+                    <p class="tp">Rajasaland merupakan pengembang properti yang progresif dengan
                         pengalaman didaerah Bandung Raya dan sekitarnya.</p>
 
 
@@ -91,19 +92,19 @@
                 <!-- Grid column -->
 
                 <!-- Grid column -->
-                <div class="col-md-3 mb-md-0 mb-3">
+                <div class="col-md-4 mb-md-0 mb-3">
 
                     <!-- Links -->
                     <h5 class="text-h">Latest Events</h5>
                     <h6>Description</h6>
                     <div class="tp">
-                        <a href="<?= base_url('berita')?>">Berita</a>
+                        <a href="<?= base_url('berita') ?>">Berita</a>
                     </div>
                 </div>
                 <!-- Grid column -->
 
                 <!-- Grid column -->
-                <div class="col-md-3 mb-md-0 mb-3">
+                <div class="col-md-4 mb-md-0 mb-3">
 
                     <!-- Links -->
                     <h5 class="text-h">Contact Us</h5>
@@ -142,7 +143,7 @@
                 <div class="modal-body" style="padding: 2rem; padding-top: 0; padding-bottom: 0">
                     <ul class="navbar-nav responsive me-auto mt-2 mt-lg-0">
                         <li class="nav-item active">
-                            <a class="nav-link" href="<?= base_url('')?>" style="color: #e7e7e8">Home</a>
+                            <a class="nav-link" href="<?= base_url('') ?>" style="color: #e7e7e8">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#section2" style="color: #ffffff">About</a>
@@ -154,7 +155,7 @@
                             <a href="#" class="nav-link" style="color: #ffffff">Berita</a>
                         </li>
                         <li class="mt-3">
-                            <a class="primary-button-login" href="<?= base_url('admin')?>"><span>Login</span></a>
+                            <a class="primary-button-login" href="<?= base_url('admin') ?>"><span>Login</span></a>
                         </li>
                     </ul>
                 </div>
