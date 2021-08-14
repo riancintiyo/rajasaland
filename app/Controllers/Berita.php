@@ -11,8 +11,9 @@ class Berita extends BaseController
 	{
 		$data['title'] = 'Rajasaland';
 
-		$this->load->view('templates/header',$data);
-        $this->load->view('berita');
-        $this->load->view('templates/footer');
+		return view('Home/berita');
+		// $this->load->view('templates/header',$data);
+		// $this->load->view('berita');
+		// $this->load->view('templates/footer');
 	}
 }
