@@ -45,6 +45,9 @@ $routes->group('admin', ['filter' => 'login'], function ($routes) {
 	$routes->add('project/delete/(:num)', 'Admin::deleteProject/$1');
 	$routes->add('project/edit/(:num)', 'Admin::editProject/$1');
 	$routes->post('project/update/(:num)', 'Admin::updateProject/$1');
+	$routes->add('news', 'Berita::berita');
+	$routes->add('news/add', 'Berita::addBerita');
+	$routes->add('news/insert', 'Berita::insertBerita');
 });
 
 /*

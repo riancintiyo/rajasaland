@@ -53,17 +53,14 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="/admin/project">
+                <a class="nav-link collapsed" href="<?= base_url('admin/project') ?>">
                     <i class="fas fa-fw fa-cog"></i>
                     <span>Project</span>
                 </a>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Components:</h6>
-                        <a class="collapse-item" href="buttons.html">Buttons</a>
-                        <a class="collapse-item" href="cards.html">Cards</a>
-                    </div>
-                </div>
+                <a class="nav-link" href="<?= base_url('admin/news') ?>">
+                    <i class="fas fa-fw fa-file"></i>
+                    <span>News</span>
+                </a>
             </li>
 
             <!-- Nav Item - Utilities Collapse Menu -->
@@ -211,7 +208,7 @@
     <!-- Bootstrap core JavaScript-->
     <script src="/admin-assets/vendor/jquery/jquery.min.js"></script>
     <script src="/admin-assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    
+
 
     <!-- Core plugin JavaScript-->
     <script src="/admin-assets/vendor/jquery-easing/jquery.easing.min.js"></script>
@@ -230,10 +227,14 @@
     <script src="/admin-assets/js/demo/chart-pie-demo.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.min.js"></script>
 
+    <!-- ck Editor -->
+    <script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
+
     <script>
         $(document).ready(function() {
             bsCustomFileInput.init()
         })
+        CKEDITOR.replace('.ckeditor');
     </script>
 
 </body>

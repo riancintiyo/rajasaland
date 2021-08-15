@@ -9,79 +9,22 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-3">
-                <div class="card shadow-lg" style="width: 18rem;">
-                    <img src="<?= base_url('uploads/berita') . '/1.jpg' ?>" class="card-img-top" alt="...">
-                    <div class="card-body text-center">
-                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, ut repellendus aspernatur tempora tempore asperiores optio sit sint? At ex ut repellendus molestias. Ex id placeat, velit maiores nihil et.</p>
+            <?php foreach ($berita as $b) : ?>
+                <div class="col-md-3">
+                    <div class="card shadow-lg" style="width: 18rem;">
+                        <img src="<?= base_url('uploads/berita') . '/' . $b['image'] ?>" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <?= $b['description'] ?>
+                            <a class="text-white text-bold" href="<?= base_url('berita') . '/' . $b['id'] ?>">
+                                Lihat Selengkapnya <i class="fa fa-arrow-circle-right"></i>
+                            </a>
+                        </div>
+
                     </div>
-                    <button class="btn btn-light text-primary">Lihat Selengkapnya</button>
                 </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card shadow-lg" style="width: 18rem;">
-                    <img src="<?= base_url('uploads/berita') . '/1.jpg' ?>" class="card-img-top" alt="...">
-                    <div class="card-body text-center">
-                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, ut repellendus aspernatur tempora tempore asperiores optio sit sint? At ex ut repellendus molestias. Ex id placeat, velit maiores nihil et.</p>
-                    </div>
-                    <button class="btn btn-light text-primary">Lihat Selengkapnya</button>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card shadow-lg" style="width: 18rem;">
-                    <img src="<?= base_url('uploads/berita') . '/1.jpg' ?>" class="card-img-top" alt="...">
-                    <div class="card-body text-center">
-                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, ut repellendus aspernatur tempora tempore asperiores optio sit sint? At ex ut repellendus molestias. Ex id placeat, velit maiores nihil et.</p>
-                    </div>
-                    <button class="btn btn-light text-primary">Lihat Selengkapnya</button>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card shadow-lg" style="width: 18rem;">
-                    <img src="<?= base_url('uploads/berita') . '/1.jpg' ?>" class="card-img-top" alt="...">
-                    <div class="card-body text-center">
-                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, ut repellendus aspernatur tempora tempore asperiores optio sit sint? At ex ut repellendus molestias. Ex id placeat, velit maiores nihil et.</p>
-                    </div>
-                    <button class="btn btn-light text-primary">Lihat Selengkapnya</button>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card shadow-lg" style="width: 18rem;">
-                    <img src="<?= base_url('uploads/berita') . '/1.jpg' ?>" class="card-img-top" alt="...">
-                    <div class="card-body text-center">
-                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, ut repellendus aspernatur tempora tempore asperiores optio sit sint? At ex ut repellendus molestias. Ex id placeat, velit maiores nihil et.</p>
-                    </div>
-                    <button class="btn btn-light text-primary">Lihat Selengkapnya</button>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card shadow-lg" style="width: 18rem;">
-                    <img src="<?= base_url('uploads/berita') . '/1.jpg' ?>" class="card-img-top" alt="...">
-                    <div class="card-body text-center">
-                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, ut repellendus aspernatur tempora tempore asperiores optio sit sint? At ex ut repellendus molestias. Ex id placeat, velit maiores nihil et.</p>
-                    </div>
-                    <button class="btn btn-light text-primary">Lihat Selengkapnya</button>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card shadow-lg" style="width: 18rem;">
-                    <img src="<?= base_url('uploads/berita') . '/1.jpg' ?>" class="card-img-top" alt="...">
-                    <div class="card-body text-center">
-                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, ut repellendus aspernatur tempora tempore asperiores optio sit sint? At ex ut repellendus molestias. Ex id placeat, velit maiores nihil et.</p>
-                    </div>
-                    <button class="btn btn-light text-primary">Lihat Selengkapnya</button>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card shadow-lg" style="width: 18rem;">
-                    <img src="<?= base_url('uploads/berita') . '/1.jpg' ?>" class="card-img-top" alt="...">
-                    <div class="card-body text-center">
-                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, ut repellendus aspernatur tempora tempore asperiores optio sit sint? At ex ut repellendus molestias. Ex id placeat, velit maiores nihil et.</p>
-                    </div>
-                    <button class="btn btn-light text-primary">Lihat Selengkapnya</button>
-                </div>
-            </div>
-            <nav aria-label="Page navigation example" class="mt-5">
+            <?php endforeach; ?>
+
+            <!-- <nav aria-label="Page navigation example" class="mt-5">
                 <ul class="pagination justify-content-center pagination-lg">
                     <li class="page-item">
                         <a class="page-link" href="#" aria-label="Previous">
@@ -97,7 +40,8 @@
                         </a>
                     </li>
                 </ul>
-            </nav>
+            </nav> -->
+            <?= $pager->links() ?>
         </div>
     </div>
 </div>
